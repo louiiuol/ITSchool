@@ -1,0 +1,9 @@
+.container {
+  margin: 50px auto !important;
+}
+nav {
+  padding:15px 25px;
+}
+.columns {
+  justify-content: space-around;
+}

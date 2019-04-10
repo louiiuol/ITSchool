@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>IT School - Addresses</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
+    </head>
+    <body class="has-navbar-fixed-top" onload="showPersons()">
+
+        <div class="container">
+            <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" >
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                    </a>
+                
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                
+                <div id="navbar" class="navbar-menu">
+                    <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        Home
+                    </a>
+                
+                    <a class="navbar-item" href="#">
+                        Persons
+                    </a>
+                
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                        More
+                        </a>
+                
+                        <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Search Bar goes here -->
+                    </div>
+                
+                    <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="columns is-mobile is-vcentered is-centered is-multiline">                
+                <form action="#" class="column post-person-form is-centered has-centered">
+                    <h1 class="title is-1">Create a new Person</h1>
+                    <div class="field">
+                        <label class="label">Prénom</label>
+                        <div class="control">
+                            <input id="firstName" class="input" type="text" placeholder="Jean">
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <label class="label">Nom</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="lastName" class="input" type="text" placeholder="Dupont">
+                        </div>
+                    </div>
+                    
+                    <div class="field">
+                        <label class="label">N° Sécurtié Sociale</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="socialSecNumber" class="input" type="number" placeholder="X-XX-XX-XX-XXX-XXX-XX">
+                        </div>
+                    </div>
+                    
+
+                    <div class="field is-grouped has-addons has-addons-centered">
+                        
+                        <div class="control">
+                            <label class="label">Sexe</label>
+                            <div class="select">
+                                <select id="gender">
+                                    <option value="MALE" >Masculin</option>
+                                    <option value="FEMALE" >Féminin</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="control">
+                            <label class="label">Date de Naissance</label>
+                            <input id="birthDate" class="input" type="date" placeholder="JJ/MM/YYYY">
+                        </div>
+                    </div>
+                    <div class="field has-addons has-addons-centered">
+                        <div class="control ">
+                            <label class="checkbox">
+                            <input type="checkbox">
+                            I agree to the <a href="#">terms and conditions</a>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="field is-grouped has-addons has-addons-centered">
+                        <div class="control">
+                            <button onclick="sendPerson()" type="button" class="button is-link">Submit</button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-link-reverse">Cancel</button>
+                        </div>
+                    </div>
+                </form> 
+                <div class="column is-two-thirds list-persons is-centered">
+                    <!-- The magical tile element! -->
+                    <h1 class="title is-1">View all Persons</h1>
+                    <table class="table" id="viewBox">
+                        <thead>
+                            <tr>
+                                <th>N°</th>
+                                <th>Prénom</th>
+                                <th>Nom</th>
+                                <th><abbr title="Numéro Sécurité Sociale">N° Sécu</abbr></th>
+                                <th><abbr title="Date de Naissance">DOB</abbr></th>
+                                <th>Sexe</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody id="personList">
+                        <!-- Inject data here -->  
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+        <script src="js/personService.js"></script>
+    </body>
+</html>
