@@ -2,9 +2,8 @@
 <img src="https://m.careers.societegenerale.com/Careers/LIBRARY/PICTURES/CAMPAIGN/News/images/itschool.jpg" title="ITSchool" alt="ITSchool">
 
 An application to represent the IT School and its promotions.  
-* Adding new operations
-* Find them with advanced search bar
-* Display and sort them as you like (sorting and pagination)
+* Create and display the addresses
+* Create and display the persons
 
 ## Getting Started
 
@@ -25,10 +24,13 @@ What things you need to install the software and how to install them:
 A step by step series that tell you how to get the development env running. Once you cloned the repository in your favorite workspace, there is 3 parts (each in a new tab) in order to launch the app. 
 
 ```
-cd ./Operations_Filter/mybank-api/
-ng build
-ng serve
+cd ./YOURWORKSPACE/
+git clone https://github.com/louiiuol/PlayGround.git FOLDERNAME
+cd FOLDERNAME 
+mvn update
+mvn spring-boot:run -f pom.xml
 ```
+#### Once these steps are done, you can access the app [here](http://localhost:8082/itschool/)
 
 ---
 
