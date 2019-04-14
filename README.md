@@ -1,10 +1,10 @@
-# Addresses Book
-<img src="https://www.bishop.edu/wp-content/uploads/2018/06/Calendar-web-banner.jpg" title="AddressesBook" alt="AddressesBook">
+# IT School
+<img src="https://m.careers.societegenerale.com/Careers/LIBRARY/PICTURES/CAMPAIGN/News/images/itschool.jpg" title="ITSchool" alt="ITSchool">
 
-An application to manage your Addresses by: 
-* Import a CSV File 
-* Posting an Address with a form
-* More features coming soon ...
+An application to represent the IT School and its promotions.  
+* Adding new operations
+* Find them with advanced search bar
+* Display and sort them as you like (sorting and pagination)
 
 ## Getting Started
 
@@ -12,55 +12,38 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them:
 
-```
-Maven
-Spring
-SQL Workbench
-JDK 1.8 
-```
+* [JDK 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Java Environnement
+* [Maven](https://maven.apache.org/) - Packages Management
+* [Spring](https://spring.io/) - Java Framework
+* [JPA](https://hibernate.org/orm/documentation/5.4/) - Relation to Database 
+* [Workbench SQL](https://dev.mysql.com/downloads/workbench/) - SQL Database GUI
 
 ### Installing
 
-A step by step series that tell you how to get the development env running
+A step by step series that tell you how to get the development env running. Once you cloned the repository in your favorite workspace, there is 3 parts (each in a new tab) in order to launch the app. 
 
 ```
-cd ./yourWorkspace/
-git cone https://github.com/louiiuol/AddressesBook.git
-cd AddressesBook
-mvn update
-mvn spring-boot:run
+cd ./Operations_Filter/mybank-api/
+ng build
+ng serve
 ```
+
+---
 
 ## Running the tests
 
-Tests are not implemented yet! 
-
-## Built With
-
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [Spring](https://spring.io/) - Java Framework
-* [Bulma](https://bulma.io/documentation/) - CSS Framework
+*Tests are not implemented yet!*
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/louiiuol/f1ca9436c877c85f39f20e683ed64156) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-Versioning is not implemented yet ! 
+Please read [contributing](https://gist.github.com/louiiuol/f1ca9436c877c85f39f20e683ed64156) file for details on our code of conduct, and the process for submitting pull requests.
 
 ## Authors
 
 * **Louis Godlewski**  - [louiiuol](https://github.com/louiiuol)
-* **Nathalie Robert**  - [nathalieRobert](https://github.com/nathalieRobert)
-* **Jonathan Luminuku**  - [LuminukuJ](https://github.com/LuminukuJ)
-* **Fox**  - [webyprod](https://github.com/webyprod)
-* **Pascal Dennu**  - [PascalDennu](https://github.com/PascalDennu)
-* **Anne-Sophie Jehu**  - [MissRazmoket](https://github.com/MissRazmoket)
-
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GENERAL PUBLIC V2 License - see the [LICENSE](LICENSE) file for details
